@@ -1,0 +1,33 @@
+Input:
+
+1. Input cost per square foot, stored as sqftCost
+2. Input and store height (houseHeight), width (houseWidth) and length (houseLength) of
+house
+3. Input and store width (doorWidth), length (doorLength), and number (doorNum) of
+doors
+4. Input number of windows (windowNum), the length (windowLength), and width
+(windowWidth)
+
+
+Calculations:
+
+1. Calculate the total for the windows
+  a. windowTotal = windowLength * windowWidth * windowNum 
+  
+2. Calculate the total for the doors
+  a. doorTotal = doorWidth * doorLength * doorNum
+  
+3. Calculate the total for the house and store as houseTotal
+  a. 1/2 + (houseLength * (houseHeight-houseWidth))+ 2 * (houseLength * houseWidth)+(houseLength * houseWidth) * 2
+  
+4. Add doorTotal to windowTotal, then subtract from houseTotal. Store as sqFt 
+  a. sqFt = (houseTotal - (windowTotal + doorTotal))
+
+5. Multiply sqFt by sqftCost to get the final estimate. Store as estimate
+  a. estimate = sqftCost * sqFt
+  
+
+Output:
+
+1. Print total paintable surface area (sqFt)
+2. Print final estimate (estimate)
