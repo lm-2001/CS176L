@@ -14,8 +14,7 @@ public class Student extends Person {
 
 	public Student(String name, String birthYear, String major) {
 			super(name, birthYear);
-			
-	this.major = major;
+			this.major = major;
 		
 	}
 	   public String toString()
